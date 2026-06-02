@@ -3,7 +3,7 @@
   "use strict";
 
   // ⚙️ CONFIG — cambiar por el WhatsApp real del negocio (formato internacional, sin signos)
-  const WHATSAPP = "18090000000";
+  const WHATSAPP = "18494021457";
   const LOGO = "assets/logo-mark.png";        // colored, transparent bg (light surfaces)
   const LOGO_LIGHT = "assets/logo-white.png"; // white mark (dark surfaces)
 

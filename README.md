@@ -20,7 +20,7 @@ Sitio estático (HTML + CSS + JS, sin dependencias ni build) con estética edito
 Antes de publicar, edita el número de WhatsApp del negocio en **`js/main.js`**:
 
 ```js
-const WHATSAPP = "18090000000"; // formato internacional, sin signos ni espacios
+const WHATSAPP = "18494021457"; // formato internacional, sin signos ni espacios
 ```
 
 Los productos de ejemplo (joyas y fragancias) están en el mismo archivo, en los arreglos `PRODUCTS` y `FRAGRANCES` — edita nombres, materiales y precios cuando tengas la data real.
