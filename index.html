@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GATÓN · Joyas con Intención — Joyería & Fragancias</title>
+  <meta name="description" content="GATÓN — Joyería artesanal y fragancias con intención. Piezas personalizadas hechas a mano. Envíos a todo el país. Santo Domingo, RD." />
+
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <div class="announce__track">
+      <span>✦ Envíos a todo el país RD</span>
+      <span>✦ Joyas personalizadas hechas a mano</span>
+      <span>✦ Plata 925 · Oro laminado · Fragancias de autor</span>
+      <span>✦ Envíos a todo el país RD</span>
+      <span>✦ Joyas personalizadas hechas a mano</span>
+      <span>✦ Plata 925 · Oro laminado · Fragancias de autor</span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <button class="nav__burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav__links nav__links--left">
+        <a href="#coleccion">Colección</a>
+        <a href="#fragancias">Fragancias</a>
+        <a href="#historia">Historia</a>
+      </nav>
+
+      <a href="#top" class="nav__brand" aria-label="GATÓN inicio">
+        <img src="assets/logo-mark.png" alt="GATÓN" />
+      </a>
+
+      <nav class="nav__links nav__links--right">
+        <a href="#clientes">Clientes</a>
+        <a href="#contacto">Contacto</a>
+        <button class="nav__cart" id="openCart" aria-label="Abrir carrito">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/>
+          </svg>
+          <span class="nav__cart-count" id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#coleccion">Colección</a>
+    <a href="#fragancias">Fragancias</a>
+    <a href="#historia">Historia</a>
+    <a href="#clientes">Clientes</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <video class="hero__video" autoplay muted loop playsinline poster="assets/logo.png">
+      <source src="assets/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <span class="hero__eyebrow reveal">Joyería & Fragancias · EST 2024</span>
+      <h1 class="hero__title">
+        <span class="reveal" style="--d:.1s">Joyas con</span>
+        <span class="reveal hero__title-em" style="--d:.25s">intención</span>
+      </h1>
+      <p class="hero__sub reveal" style="--d:.4s">
+        Piezas hechas a mano que cuentan tu historia. Plata, oro y fragancias
+        de autor, diseñadas en República Dominicana.
+      </p>
+      <div class="hero__cta reveal" style="--d:.55s">
+        <a href="#coleccion" class="btn btn--solid">Ver la colección</a>
+        <a href="#historia" class="btn btn--ghost">Nuestra esencia</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- Marquee strip -->
+  <div class="strip">
+    <div class="strip__track">
+      <span>GATÓN</span><i>✦</i><span>JOYAS CON INTENCIÓN</span><i>✦</i><span>HECHO A MANO</span><i>✦</i>
+      <span>GATÓN</span><i>✦</i><span>JOYAS CON INTENCIÓN</span><i>✦</i><span>HECHO A MANO</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- Collections -->
+  <section class="collections reveal-section">
+    <div class="section-head">
+      <span class="kicker">Explora</span>
+      <h2 class="section-title">Nuestras colecciones</h2>
+    </div>
+    <div class="collections__grid">
+      <a href="#coleccion" class="coll-card" data-filter="Collares">
+        <div class="coll-card__mark"><img src="assets/logo-white.png" alt="" /></div>
+        <h3>Collares</h3><span>Ver piezas →</span>
+      </a>
+      <a href="#coleccion" class="coll-card" data-filter="Anillos">
+        <div class="coll-card__mark"><img src="assets/logo-white.png" alt="" /></div>
+        <h3>Anillos</h3><span>Ver piezas →</span>
+      </a>
+      <a href="#coleccion" class="coll-card" data-filter="Personalizados">
+        <div class="coll-card__mark"><img src="assets/logo-white.png" alt="" /></div>
+        <h3>Personalizados</h3><span>Ver piezas →</span>
+      </a>
+      <a href="#fragancias" class="coll-card" data-filter="Fragancias">
+        <div class="coll-card__mark"><img src="assets/logo-white.png" alt="" /></div>
+        <h3>Fragancias</h3><span>Ver piezas →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Catalog -->
+  <section class="catalog reveal-section" id="coleccion">
+    <div class="section-head">
+      <span class="kicker">Catálogo</span>
+      <h2 class="section-title">Joyería</h2>
+      <p class="section-lead">Cada pieza está pensada para acompañarte. Selecciona, agrega al carrito y finaliza tu pedido por WhatsApp.</p>
+    </div>
+
+    <div class="filters" id="filters">
+      <button class="filter is-active" data-filter="all">Todo</button>
+      <button class="filter" data-filter="Collares">Collares</button>
+      <button class="filter" data-filter="Anillos">Anillos</button>
+      <button class="filter" data-filter="Pulseras">Pulseras</button>
+      <button class="filter" data-filter="Aretes">Aretes</button>
+      <button class="filter" data-filter="Personalizados">Personalizados</button>
+    </div>
+
+    <div class="product-grid" id="productGrid"><!-- JS renders here --></div>
+  </section>
+
+  <!-- Brand story -->
+  <section class="story reveal-section" id="historia">
+    <div class="story__media">
+      <div class="story__mark"><img src="assets/logo-mark.png" alt="GATÓN" /></div>
+      <span class="story__est">EST · 2024</span>
+    </div>
+    <div class="story__text">
+      <span class="kicker">Nuestra esencia</span>
+      <h2 class="section-title">Joyas que nacen de una idea</h2>
+      <p>GATÓN nace de la creencia de que cada accesorio debe tener un significado.
+        No vendemos solo joyas: creamos piezas con intención, pensadas para marcar
+        momentos, personas y recuerdos.</p>
+      <p>Trabajamos con plata 925, oro laminado y fragancias de autor. Todo hecho
+        a mano y con la posibilidad de personalizarlo a tu manera.</p>
+      <ul class="story__pills">
+        <li>✦ Hecho a mano</li>
+        <li>✦ Materiales nobles</li>
+        <li>✦ 100% personalizable</li>
+      </ul>
+      <a href="#coleccion" class="btn btn--solid">Descubre la colección</a>
+    </div>
+  </section>
+
+  <!-- Fragrances feature -->
+  <section class="frag reveal-section" id="fragancias">
+    <div class="frag__head">
+      <span class="kicker kicker--light">Fragancias de autor</span>
+      <h2 class="section-title section-title--light">Una esencia para cada historia</h2>
+      <p class="section-lead section-lead--light">Aromas envolventes que complementan tu estilo. Edición limitada, embotellados con intención.</p>
+    </div>
+    <div class="product-grid product-grid--frag" id="fragGrid"><!-- JS renders here --></div>
+  </section>
+
+  <!-- How to order -->
+  <section class="steps reveal-section">
+    <div class="section-head">
+      <span class="kicker">¿Cómo pedir?</span>
+      <h2 class="section-title">Tu pedido en 3 pasos</h2>
+    </div>
+    <div class="steps__grid">
+      <div class="step"><span class="step__num">01</span><h3>Elige tu pieza</h3><p>Explora el catálogo y agrega tus favoritos al carrito.</p></div>
+      <div class="step"><span class="step__num">02</span><h3>Finaliza por WhatsApp</h3><p>Tu pedido se envía automáticamente a nuestro WhatsApp.</p></div>
+      <div class="step"><span class="step__num">03</span><h3>Recíbelo en casa</h3><p>Coordinamos el pago y enviamos a todo el país RD.</p></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="clients reveal-section" id="clientes">
+    <div class="section-head">
+      <span class="kicker">Clientes</span>
+      <h2 class="section-title">Lo que dicen de GATÓN</h2>
+    </div>
+    <div class="clients__grid">
+      <figure class="quote">
+        <p>"Me hicieron un collar personalizado con el nombre de mi hija. Quedó hermoso y la atención fue increíble."</p>
+        <figcaption>— Massiel R., Santo Domingo</figcaption>
+      </figure>
+      <figure class="quote">
+        <p>"La calidad de la plata es real y la fragancia dura todo el día. Ya soy cliente fija."</p>
+        <figcaption>— Laura P., Santiago</figcaption>
+      </figure>
+      <figure class="quote">
+        <p>"Pedí por WhatsApp súper fácil y me llegó en dos días. Las joyas tienen un acabado precioso."</p>
+        <figcaption>— Genesis M., La Vega</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact reveal-section" id="contacto">
+    <div class="contact__info">
+      <span class="kicker">Contáctanos</span>
+      <h2 class="section-title">Hablemos de tu próxima joya</h2>
+      <p>¿Quieres una pieza personalizada o tienes dudas sobre un producto?
+        Escríbenos y te respondemos en breve.</p>
+      <ul class="contact__list">
+        <li><strong>WhatsApp</strong><a href="https://wa.me/18090000000" target="_blank" rel="noopener">+1 (809) 000-0000</a></li>
+        <li><strong>Instagram</strong><a href="https://instagram.com/gaton.do" target="_blank" rel="noopener">@gaton.do</a></li>
+        <li><strong>Ubicación</strong><span>Av. Independencia, Santo Domingo, RD</span></li>
+        <li><strong>Envíos</strong><span>A todo el país 🇩🇴</span></li>
+      </ul>
+    </div>
+    <form class="contact__form" id="contactForm" novalidate>
+      <div class="field">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+      </div>
+      <div class="field">
+        <label for="phone">Teléfono / WhatsApp</label>
+        <input type="tel" id="phone" name="phone" placeholder="(809) 000-0000" required />
+      </div>
+      <div class="field">
+        <label for="interest">Me interesa</label>
+        <select id="interest" name="interest">
+          <option>Joya personalizada</option>
+          <option>Collares</option>
+          <option>Anillos</option>
+          <option>Fragancias</option>
+          <option>Otra cosa</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4" placeholder="Cuéntanos qué tienes en mente…"></textarea>
+      </div>
+      <button type="submit" class="btn btn--solid btn--full">Enviar por WhatsApp</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/logo-white.png" alt="GATÓN" />
+        <p>Joyas con intención. Hechas a mano en República Dominicana.</p>
+      </div>
+      <div class="footer__cols">
+        <div><h4>Tienda</h4><a href="#coleccion">Joyería</a><a href="#fragancias">Fragancias</a><a href="#coleccion">Personalizados</a></div>
+        <div><h4>GATÓN</h4><a href="#historia">Historia</a><a href="#clientes">Clientes</a><a href="#contacto">Contacto</a></div>
+        <div><h4>Síguenos</h4><a href="https://instagram.com/gaton.do" target="_blank" rel="noopener">Instagram</a><a href="https://wa.me/18090000000" target="_blank" rel="noopener">WhatsApp</a><a href="https://linktr.ee/gaton.do" target="_blank" rel="noopener">Linktree</a></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2024–2026 GATÓN · Joyería & Fragancias</span>
+      <span>Santo Domingo, RD · Founder @sandymiguelv</span>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart" id="cart" aria-hidden="true">
+    <div class="cart__head">
+      <h3>Tu carrito</h3>
+      <button class="cart__close" id="closeCart" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="cart__items" id="cartItems"></div>
+    <div class="cart__empty" id="cartEmpty">
+      <div class="cart__empty-mark"><img src="assets/logo-mark.png" alt="" /></div>
+      <p>Tu carrito está vacío</p>
+      <span>Agrega tus piezas favoritas para comenzar.</span>
+    </div>
+    <div class="cart__foot" id="cartFoot">
+      <div class="cart__total"><span>Total</span><strong id="cartTotal">RD$0</strong></div>
+      <button class="btn btn--solid btn--full" id="checkout">Finalizar por WhatsApp</button>
+      <p class="cart__note">Coordinamos pago y envío al confirmar.</p>
+    </div>
+  </aside>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
